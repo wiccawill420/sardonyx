@@ -7,6 +7,7 @@ function fCHECK(){
 			echo ""
 			echo -e "${cyan}Tunnel is ${green}up${cyan}," 
 			echo -e "${cyan}starting ${blue}Kodi${plain}"
+			/home/pi/bin/tuncheckd.sh &
 			sleep 3
 			kodi
 		else

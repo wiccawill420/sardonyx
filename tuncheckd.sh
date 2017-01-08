@@ -12,4 +12,8 @@ while true; do
 			sudo killall -9 -g kodi
 			exit 1
 	fi
+	if [ $(ps aux|grep -v grep|grep kodi.sh > /dev/null;echo $?)  -ne 0 ]
+		then
+			exit 0
+	fi
 done
