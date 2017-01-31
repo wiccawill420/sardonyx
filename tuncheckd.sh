@@ -7,7 +7,7 @@
 # Update Jan 30, 2017: added check for failure of curl to kill kodi
 
 while true; do		#Keep the party going
-	sleep 1 m		#Every 60 seconds
+	sleep 1m		#Every 60 seconds
 #Create a random value that is 32 alphanumeric characters long
 #Use Andrew's site to check the state we are connecting from
 #0 is good, above 0 is not. ie, if we are connecting from NV, then the tunnel is down
