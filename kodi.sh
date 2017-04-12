@@ -9,6 +9,7 @@ function fCHECK(){
 			echo -e "${cyan}starting ${blue}Kodi${plain}"
 			/home/pi/bin/tuncheckd.sh &
 			sleep 3
+			sudo /home/pi/bin/clear-caches.sh
 			kodi
 		else
 			echo ""
@@ -48,7 +49,8 @@ function fMAIN(){
 			read -p "Enter y to start > " bypass
 			if [ "$bypass" == "y" ]
 				then
-					kodi
+				sudo /home/pi/bin/clear-caches.sh	
+				kodi
 				else
 					echo -e "${red}Exiting${plain}"
 					exit 1
