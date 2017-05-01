@@ -3,6 +3,6 @@
 # By: William Lynn
 # Auto-commit check
 date
-cd $sardonyx_git
+cd $HOME/bin/
 git remote update
 git pull origin master
