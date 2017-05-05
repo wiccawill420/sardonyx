@@ -7,9 +7,9 @@ function fCHECK(){
 			echo ""
 			echo -e "${cyan}Tunnel is ${green}up${cyan}," 
 			echo -e "${cyan}starting ${blue}Kodi${plain}"
-			/home/pi/bin/tuncheckd.sh &
+			$HOME/bin/tuncheckd.sh &
 			sleep 3
-			sudo /home/pi/bin/clear-caches.sh
+			sudo $HOME/bin/clear-caches.sh
 			kodi
 		else
 			echo ""
@@ -49,7 +49,7 @@ function fMAIN(){
 			read -p "Enter y to start > " bypass
 			if [ "$bypass" == "y" ]
 				then
-				sudo /home/pi/bin/clear-caches.sh	
+				sudo $HOME/bin/clear-caches.sh	
 				kodi
 				else
 					echo -e "${red}Exiting${plain}"
