@@ -2,7 +2,10 @@
 #By: William
 
 function fMAIN(){
+#Check if this is ssh or regular terminal
+if [ `printenv|grep SSH>/dev/null; echo $?` -ne 0 ]; then
 clear
+
 echo -e "${white}#############################${white}#${plain}"
 echo -e "${white}#                            ${white}#${plain}"
 echo -e "${white}#    ${lightcyan}Welcome to ${lightpurple}Sardonyx!    ${white}#${plain}"
@@ -15,6 +18,7 @@ echo -e "${white}# ${green}Have fun!                  ${white}#${plain}"
 echo -e "${white}#                            ${white}#${plain}"
 echo -e "${white}#############################${white}#${plain}"
 echo ""
+fi
 }
 
 function fCOLOR(){		#Define colors
